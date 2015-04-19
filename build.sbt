@@ -1,4 +1,4 @@
-import com.lihaoyi.workbench.Plugin._
+//import com.lihaoyi.workbench.Plugin._
 
 enablePlugins(ScalaJSPlugin)
 
