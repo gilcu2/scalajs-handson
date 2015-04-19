@@ -4,6 +4,7 @@ import scala.scalajs.js.annotation.JSExport
 import org.scalajs.dom
 import org.scalajs.dom.html
 import scalajs.js
+import scala.util.Random
 
 
 case class Point(x: Int, y: Int) {
