@@ -19,17 +19,21 @@ object HelloWorld1 {
     def renderListings = ul(
       for {
         fruit <- listings
-        if fruit.toLowerCase.startsWith(
+        if fruit.toLowerCase.contains(
           box.value.toLowerCase
         )
       } yield {
-        val (first, last) = fruit.splitAt(
-          box.value.length
-        )
+          val (first, mark, last) = {
+            val (first, second) = fruit.splitAt(
+              fruit.indexOf(box.value.toLowerCase))
+            val (mark,last)=second.splitAt(box.value.length)
+            (first,mark,last)
+          }
         li(
+          first,
           span(
             backgroundColor:="yellow",
-            first
+            mark
           ),
           last
         )
