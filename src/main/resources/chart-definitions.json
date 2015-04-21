@@ -1,2 +1,0 @@
-[{"name": "First Dataset", "series": ["timeseries1.json", "timeseries2.json"]},
-  {"name": "Second Dataset", "series": ["timeseries3.json", "timeseries4.json"]}]
