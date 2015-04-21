@@ -1,4 +1,4 @@
-package rerendering
+package search
 
 import org.scalajs.dom
 import dom.html
@@ -7,7 +7,7 @@ import scalatags.JsDom.all._
 
 
 @JSExport
-object HelloWorld1 {
+object Search {
   @JSExport
   def main(target: html.Div) = {
     val listings = Seq(
