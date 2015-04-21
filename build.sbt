@@ -2,7 +2,7 @@
 
 enablePlugins(ScalaJSPlugin)
 
-workbenchSettings
+//workbenchSettings
 
 name := "Example"
 
@@ -16,8 +16,8 @@ libraryDependencies ++= Seq(
   "org.webjars" % "d3js" % "3.5.3"
 )
 
-bootSnippet := "example.ScalaJSExample().main(document.getElementById('canvas'));"
+//bootSnippet := "d3scala.Book1().main(document.getElementById('canvas'));"
 
-updateBrowsers <<= updateBrowsers.triggeredBy(fastOptJS in Compile)
+//updateBrowsers <<= updateBrowsers.triggeredBy(fastOptJS in Compile)
 
-sources in Compile <<= (sources in Compile).map(_ filter(_.name != "ScalaJSExample.scala"))
+//sources in Compile <<= (sources in Compile).map(_ filter(_.name != "ScalaJSExample.scala"))
