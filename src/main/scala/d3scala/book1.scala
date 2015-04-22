@@ -12,7 +12,7 @@ object Book1 {
 
     val d3 = js.Dynamic.global.d3
 
-    d3.select("#full_window").append("p").text("New paragraph!")
+    d3.select(target).append("p").text("New paragraph!")
 
   }
 }

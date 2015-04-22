@@ -12,8 +12,8 @@ scalaVersion := "2.11.5"
 
 libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.8.0",
-  "com.lihaoyi" %%% "scalatags" % "0.4.6",
-  "org.webjars" % "d3js" % "3.5.3"
+  "com.lihaoyi" %%% "scalatags" % "0.4.6"
+  //,  "org.webjars" % "d3js" % "3.5.3"
 )
 
 //bootSnippet := "d3scala.Book1().main(document.getElementById('canvas'));"
