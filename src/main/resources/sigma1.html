@@ -22,40 +22,41 @@
 
     var node0={
       // Main attributes:
-      id: 'n0',
-      label: 'Hello',
+      "id": "n0",
+      "label": "Hello",
       // Display attributes:
-      x: 0,
-      y: 0,
-      size: 1,
-      color: '#f00'
+      "x": 0,
+      "y": 0,
+      "size": 1,
+      "color": "#f00"
     }
 
     var node1={
       // Main attributes:
-      id: 'n1',
-      label: 'World !',
+      "id": "n1",
+      "label": "World !",
       // Display attributes:
-      x: 1,
-      y: 1,
-      size: 1,
-      color: '#00f'
+      "x": 1,
+      "y": 1,
+      "size": 1,
+      "color": "#00f"
     }
 
     var edge={
-      id: 'e0',
+      "id": "e0",
       // Reference extremities:
-      source: 'n0',
-      target: 'n1'
+      "source": "n0",
+      "target": "n1"
     }
 
     // Then, let's add some data to display:
-    s.graph.addNode(node0)
-    s.graph.addNode(node1)
-    s.graph.addEdge(edge)
+    s["graph"]["addNode"](node0)
+    s["graph"]["addNode"](node1)
+    s["graph"]["addEdge"](edge)
+
 
     // Finally, let's ask our sigma instance to refresh:
-    s.refresh();
+    s["refresh"]()
   </script>
 </body>
 </html>
